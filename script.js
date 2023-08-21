@@ -50,13 +50,12 @@ function startGame() {
 
 $(document).ready(function () {
 
-    $('#start-button').click(function (){
+    $('#start-button').click(function () {
 
         $(this).prop('disabled', true);
 
         startGame();
     })
-
 
 
 });
