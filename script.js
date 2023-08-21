@@ -1,7 +1,8 @@
 "use strict";
 
 
-$(document).ready(function () {
+function startGame() {
+
 
     let score = 0;
 
@@ -42,6 +43,20 @@ $(document).ready(function () {
     });
 
     setTimeout(showMole, 500);
+
+
+}
+
+
+$(document).ready(function () {
+
+    $('#start-button').click(function (){
+
+        $(this).prop('disabled', true);
+
+        startGame();
+    })
+
 
 
 });
